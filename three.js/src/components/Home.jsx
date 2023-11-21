@@ -43,7 +43,7 @@ const Home = () => {
 
             <div className="button">
               <Link to={"/car"}>
-              <button>Discover</button>
+                <button>Discover</button>
               </Link>
             </div>
           </div>
@@ -56,7 +56,7 @@ const Home = () => {
           <div className="projectInformation">
             <div className="text">
               <h2>Shoes</h2>
-              <p>Nike Dunk High Hawaii</p>
+              <p>Nike Air Force 1</p>
               <br />
             </div>
 
