@@ -66,7 +66,7 @@ const Home = () => {
             </div>
 
             <motion.div className="button">
-              <Link to={"/fastfood"}>
+              <Link to={"/car"}>
                 <motion.button
                   whileHover={{ scale: 1.2 }}
                   whileTap={{ scale: 0.9 }}
@@ -100,7 +100,7 @@ const Home = () => {
             </div>
 
             <motion.div className="button">
-              <Link to={"/fastfood"}>
+              <Link to={"/shoes"}>
                 <motion.button
                   whileHover={{ scale: 1.2 }}
                   whileTap={{ scale: 0.9 }}
