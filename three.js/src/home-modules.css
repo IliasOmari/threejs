@@ -81,3 +81,19 @@ body {
   text-align: center;
   font-size: 24px;
 }
+
+.button-back button {
+  margin-top: 25px;
+  margin-left: 25px;
+  background-color: #e7275c;
+  border: 0.1rem solid #000000;
+  border-radius: 0.4rem;
+  box-shadow: 0.2rem 0.2rem 0 #000000;
+  cursor: pointer;
+  padding: 10px;
+  font-family: Poppins;
+  font-weight: bold;
+  font-size: 14px;
+  text-decoration: none;
+  color: white;
+}
