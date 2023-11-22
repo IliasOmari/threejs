@@ -4,17 +4,24 @@ import { Suspense } from "react";
 import { Burger } from "./Burger.jsx";
 import { Link } from "react-router-dom";
 import "../home-modules.css";
+import { motion } from "framer-motion";
 
 /* eslint-disable react/no-unknown-property */
 
 const FastFood = () => {
   return (
     <>
-      <div className="button-back">
+      <motion.div className="button-back">
         <Link to={"/"}>
-          <button>Back to models</button>
+          <motion.button
+            whileHover={{ scale: 1.2 }}
+            whileTap={{ scale: 0.9 }}
+            transition={{ type: "spring", stiffness: 400, damping: 17 }}
+          >
+            Back to models
+          </motion.button>
         </Link>
-      </div>
+      </motion.div>
       <Canvas
         camera={{ position: [10, 10, 0], fov: 100 }}
         style={{

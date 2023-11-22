@@ -3,6 +3,7 @@ import Hamburger from "../assets/hamburger.png";
 import Mercedes from "../assets/mercedes.png";
 import Shoes from "../assets/nike.png";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 const Home = () => {
   return (
     <>
@@ -11,7 +12,15 @@ const Home = () => {
       </div>
 
       <div className="models">
-        <div className="model">
+        <motion.div
+          className="model"
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{
+            duration: 0.8,
+            ease: [0, 0.71, 0.2, 1.01],
+          }}
+        >
           <div className="projectImg">
             <img src={Hamburger} alt="halburger" />
           </div>
@@ -22,15 +31,30 @@ const Home = () => {
               <br />
             </div>
 
-            <div className="button">
+            <motion.div className="button">
               <Link to={"/fastfood"}>
-                <button>Discover</button>
+                <motion.button
+                  whileHover={{ scale: 1.2 }}
+                  whileTap={{ scale: 0.9 }}
+                  transition={{ type: "spring", stiffness: 400, damping: 17 }}
+                >
+                  Discover
+                </motion.button>
               </Link>
-            </div>
+            </motion.div>
           </div>
-        </div>
+        </motion.div>
 
-        <div className="model">
+        <motion.div
+          className="model"
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{
+            duration: 0.8,
+            ease: [0, 0.71, 0.2, 1.01],
+            delay: 0.3,
+          }}
+        >
           <div className="projectImg">
             <img src={Mercedes} alt="Mercedes" />
           </div>
@@ -41,15 +65,30 @@ const Home = () => {
               <br />
             </div>
 
-            <div className="button">
-              <Link to={"/car"}>
-                <button>Discover</button>
+            <motion.div className="button">
+              <Link to={"/fastfood"}>
+                <motion.button
+                  whileHover={{ scale: 1.2 }}
+                  whileTap={{ scale: 0.9 }}
+                  transition={{ type: "spring", stiffness: 400, damping: 17 }}
+                >
+                  Discover
+                </motion.button>
               </Link>
-            </div>
+            </motion.div>
           </div>
-        </div>
+        </motion.div>
 
-        <div className="model">
+        <motion.div
+          className="model"
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{
+            duration: 0.8,
+            ease: [0, 0.71, 0.2, 1.01],
+            delay: 0.6,
+          }}
+        >
           <div className="projectImg">
             <img src={Shoes} alt="Nike" />
           </div>
@@ -60,13 +99,19 @@ const Home = () => {
               <br />
             </div>
 
-            <div className="button">
-              <Link to={"/shoes"}>
-                <button>Discover</button>
+            <motion.div className="button">
+              <Link to={"/fastfood"}>
+                <motion.button
+                  whileHover={{ scale: 1.2 }}
+                  whileTap={{ scale: 0.9 }}
+                  transition={{ type: "spring", stiffness: 400, damping: 17 }}
+                >
+                  Discover
+                </motion.button>
               </Link>
-            </div>
+            </motion.div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </>
   );

@@ -3,16 +3,23 @@ import { OrbitControls } from "@react-three/drei";
 import { Suspense } from "react";
 import { Mercedes } from "./Mercedes.jsx";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 /* eslint-disable react/no-unknown-property */
 
 const Car = () => {
   return (
     <>
-      <div className="button-back">
+      <motion.div className="button-back">
         <Link to={"/"}>
-          <button>Back to models</button>
+          <motion.button
+            whileHover={{ scale: 1.2 }}
+            whileTap={{ scale: 0.9 }}
+            transition={{ type: "spring", stiffness: 400, damping: 17 }}
+          >
+            Back to models
+          </motion.button>
         </Link>
-      </div>
+      </motion.div>
       <Canvas
         camera={{ position: [10, 10, 0], fov: 120 }}
         style={{
