@@ -1,8 +1,33 @@
-# React + Vite
+# 3D Models
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Check out my 3D prototype trio: a delicious model inspired by my favorite food, a sleek version of my dream car, and a detailed replica of my beloved shoes.
 
-Currently, two official plugins are available:
+Each piece captures the essence of my passions, merging culinary delights, automotive dreams, and fashion preferences into a unique showcase of my identity.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Installation
+
+```bash
+npm install
+```
+
+## Used packages
+
+```bash
+npm install react-router-dom
+```
+
+```bash
+npm install framer-motion
+```
+
+```bash
+npm install three @react-three/fiber @react-three/drei
+```
+
+## Sources
+
+https://dev.to/nourdinedev/how-to-use-threejs-and-react-to-render-a-3d-model-of-your-self-4kkf
+
+## Author
+
+Ilias Omari
